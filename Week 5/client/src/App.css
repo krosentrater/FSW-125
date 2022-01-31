@@ -1,0 +1,52 @@
+.recycled-items {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+    text-align: center;
+}
+
+h1, p {
+    margin: 5px;
+}
+
+.item {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.delete {
+    background: rgba(255, 0, 0, 0.521);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.edit {
+    background: lightgreen;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.add {
+    background: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+input {
+    padding: 5px;
+    background-color: rgba(211, 211, 211, 0.281);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.close-btn {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(220, 20, 60);
+}
