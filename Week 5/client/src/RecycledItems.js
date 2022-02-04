@@ -4,15 +4,21 @@ import { useState } from 'react';
 function RecycledItems({deleteThatItem, edit, item}) {
 
     const [edditToggle, setEditToggle] = useState(false); 
-
     
     return (
         <div className = 'item'>
             { !edditToggle ?
 
                 <>
-                    <h1>Name: {item.name}</h1>
-                    <p>Desc: {item.desc}</p>
+                    <h1>Name: <span className = 'not-bold'>{item.name}</span></h1>
+                    <span className = 'make-bold'>Desc:</span>{item.desc}
+                    <span className = 'make-bold'> | </span>
+                    <span className = 'make-bold'> Quantity: </span>
+                    <span>{item.quantity}</span>
+                    <span className = 'make-bold'> | </span>
+                    <span className = 'make-bold'> PPU: </span>
+                    <span>{item.ppu}</span>
+                    <br></br>
                     <button 
                         onClick = {() => deleteThatItem(item._id)} 
                         className = 'delete'>
