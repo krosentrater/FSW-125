@@ -51,10 +51,14 @@ function App() {
     key = {stuff._id} />);
   
   return (
-    <div className = 'recycled-items'>
-      <RecycledItemForm add = {postItems} btnText = 'Add Item'/>
-      {recycled}
-    </div>
+    <>
+      <h1 className = 'header'>Thunberg's Recycling Corp &trade;</h1>
+      <h4 className = 'sub-header'>NYC recycles even more</h4>
+      <div className = 'recycled-items'>
+        <RecycledItemForm add = {postItems} btnText = 'Add Item'/>
+        {recycled}
+      </div>
+    </>
   );
 }
 
